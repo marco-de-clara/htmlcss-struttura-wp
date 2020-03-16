@@ -13,13 +13,16 @@ body {
     line-height: 1.8;
 }
 
-#background {
+#page {
     background-image: url('img/pattern.png');
-    height: 100%;
+    padding-bottom: 24px;
 }
 
 header, main {
     margin: auto;
+}
+
+header, main, footer {
     text-align: center;
 }
 
@@ -36,9 +39,12 @@ img {
     line-height: 37px;
 }
 
+#menu li a, .box li a, .contacts a {
+    text-decoration: none;
+}
+
 #menu li a {
     display: inline-block;
-    text-decoration: none;
     color: #ffffff;
     padding: 0 10px;
     height: 22px;
@@ -55,7 +61,7 @@ img {
     left: 0;
 }
 
-main, nav {
+main, nav, footer {
     margin: 0px auto;
     max-width: 1000px;
 }
@@ -82,6 +88,10 @@ main::after {
     margin: 16px 0px;
 }
 
+#sidebar, .text {
+    text-align: left;
+}
+
 #sidebar {
     width: 25%;
     margin-right: 24px;
@@ -92,8 +102,7 @@ main::after {
     border-radius: 5px;
     background-color: #ffffff;
     margin-bottom: 24px;
-    padding: 10px 10px;
-    text-align: left;
+    padding: 0px 10px;
 }
 
 h2, p {
@@ -101,7 +110,6 @@ h2, p {
 }
 
 h2 {
-    text-align: left;
     color: #504741;
 }
 
@@ -128,10 +136,39 @@ ul {
     margin-right: 24px;
 }
 
-.box p {
+.post .box p, .widget .box p {
     line-height: 28px;
 }
 
 .widget {
     width: 20%;
+}
+
+footer .box p, .contacts, .contacts a {
+    color: #cecece;
+}
+
+footer .box p {
+    font-style: italic;
+    border-bottom: 1px solid #9a9a9a;
+}
+
+footer .box {
+    height: 150px;
+}
+
+.contacts {
+    display: inline-block;
+    font-size: 40px;
+    width: 33%;
+}
+
+#floater {
+    float: left;
+    width: 100%;
+    height: 25%;
+}
+
+#contacts-wrapper {
+    clear: both;
 }
