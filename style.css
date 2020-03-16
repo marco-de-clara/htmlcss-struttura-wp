@@ -5,12 +5,20 @@
     line-height: 0;
 }
 
+body {
+    color: #666666;
+    font-size: 1em;
+    font-weight: 400;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    line-height: 1.8;
+}
+
 #background {
     background-image: url('img/pattern.png');
     height: 100vh;
 }
 
-header, #menu-wrapper {
+header, main {
     margin: auto;
     text-align: center;
 }
@@ -24,13 +32,16 @@ img {
     display: inline-block;
 }
 
+#menu li a, .box, h2 {
+    line-height: 37px;
+}
+
 #menu li a {
     display: inline-block;
     text-decoration: none;
     color: #ffffff;
     padding: 0 10px;
     height: 22px;
-    line-height: 37px;
     position: relative;
 }
 
@@ -44,12 +55,68 @@ img {
     left: 0;
 }
 
-nav {
+main, nav {
     margin: 0px auto;
+    max-width: 1000px;
+}
+
+nav {
     background-color: #666666;
     height: 40px;
-    max-width: 1000px;
     font-size: 12px;
-    font-weight: bold;
-    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+main {
+    width: 100%;
+    margin: 0 auto;
+}
+
+main::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#sidebar, #post, #widget {
+    float: left;
+}
+
+#sidebar {
+    width: 25%;
+}
+
+.box {
+    height: 100%;
+    border-radius: 5px;
+    background-color: #ffffff;
+    margin: 16px 0px;
+    padding: 5px 10px;
+    text-align: left;
+}
+
+h2 {
+    text-align: left;
+    color: #504741;
+}
+
+.fa-rss-square {
+    color: #faa501;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.box li {
+    padding: 5px;
+}
+
+.box li a {
+    line-height: 25px;
+    color: #99cc33;
+    text-decoration: none;
+}
+
+#post {
+    width: 40%;
 }
