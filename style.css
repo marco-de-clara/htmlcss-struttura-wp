@@ -15,7 +15,7 @@ body {
 
 #background {
     background-image: url('img/pattern.png');
-    height: 100vh;
+    height: 100%;
 }
 
 header, main {
@@ -32,7 +32,7 @@ img {
     display: inline-block;
 }
 
-#menu li a, .box, h2 {
+#menu li a, .box ul, h2 {
     line-height: 37px;
 }
 
@@ -77,21 +77,26 @@ main::after {
     clear: both;
 }
 
-#sidebar, #post, #widget {
+#sidebar, .post, .widget {
     float: left;
+    margin: 16px 0px;
 }
 
 #sidebar {
     width: 25%;
+    margin-right: 24px;
 }
 
 .box {
     height: 100%;
     border-radius: 5px;
     background-color: #ffffff;
-    margin: 16px 0px;
-    padding: 5px 10px;
+    padding: 10px 10px;
     text-align: left;
+}
+
+h2, p {
+    padding: 15px;
 }
 
 h2 {
@@ -117,6 +122,15 @@ ul {
     text-decoration: none;
 }
 
-#post {
-    width: 40%;
+.post {
+    width: 50%;
+    margin-right: 24px;
+}
+
+.box p {
+    line-height: 28px;
+}
+
+.widget {
+    width: 20%;
 }
