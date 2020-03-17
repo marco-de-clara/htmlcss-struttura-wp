@@ -33,6 +33,7 @@ img {
 
 #menu, #menu li {
     display: inline-block;
+    position: relative;
 }
 
 #menu li a, .box ul, h2 {
@@ -47,8 +48,17 @@ img {
     display: inline-block;
     color: #ffffff;
     padding: 0 10px;
-    height: 22px;
-    position: relative;
+    line-height: 40px;
+    border-left: 1px solid rgba(255, 255, 255, 0.1);
+    border-right: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+#menu li:first-child a {
+    border-left: 0;
+}
+
+#menu li:last-child a {
+    border-right: 0;
 }
 
 #menu li a:hover::after {
